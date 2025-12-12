@@ -22,13 +22,13 @@ a{cursor:pointer;color:inherit;text-decoration:none}.tweak-global-animations-ani
 /* Homepage (hero image needs more room) */
 .homepage,
 body.home {
-  padding-top: 120px;
+  padding-top: 200px;
 }
 
 /* Interior pages (services, about, etc.) */
 .page,
 body:not(.home):not(.homepage) {
-  padding-top: 70px;
+  padding-top: 90px;
 }
 
 /* Anchor / menu scroll correction */
