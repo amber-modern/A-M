@@ -28,7 +28,7 @@ body.home {
 /* Interior pages (services, about, etc.) */
 .page,
 body:not(.home):not(.homepage) {
-  padding-top: 90px;
+  padding-top: 150px;
 }
 
 /* Anchor / menu scroll correction */
