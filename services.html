@@ -40,7 +40,7 @@
     <link rel="stylesheet" type="text/css" href="css/static.css">
   
     <style>
-    /* Enlarged and centered buttons */
+    /* Button styles */
     .sqs-block-button-element,
     .sqs-button-element,
     .btn,
@@ -4866,7 +4866,7 @@
         height: auto !important;
       }
 
-      /* Ensure both pricing list images have the same width and alignment */
+      /* Pricing list images */
       .fe-block-yui_3_17_2_1_1757634160262_6628 img {
         width: 100% !important;
         max-width: 100%;
@@ -5096,7 +5096,7 @@
         height: auto !important;
       }
 
-      /* Ensure both pricing list images have the same width and alignment */
+      /* Pricing list images */
       .fe-block-yui_3_17_2_1_1757634160262_6628 img {
         width: 100% !important;
         max-width: 100%;
@@ -7229,16 +7229,15 @@
   </script>
   
   <script>
-    // Force height constraint on price list image block
+    // Price list image height fix
     (function() {
       function constrainBlockHeight() {
         const block = document.querySelector('.fe-block-yui_3_17_2_1_1757634160262_17857');
         if (block) {
-          // Get the actual content height
           const content = block.querySelector('img');
           if (content) {
             const imgHeight = content.offsetHeight;
-            const maxHeight = Math.min(imgHeight + 50, 1200); // Image height + padding, max 1200px
+            const maxHeight = Math.min(imgHeight + 50, 1200);
             block.style.maxHeight = maxHeight + 'px';
             block.style.height = 'auto';
             block.style.overflow = 'visible';
@@ -7246,7 +7245,6 @@
         }
       }
       
-      // Run on load and after a short delay to ensure images are loaded
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', constrainBlockHeight);
       } else {
