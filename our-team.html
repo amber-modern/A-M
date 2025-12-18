@@ -83,67 +83,6 @@
       min-height: 48px !important;
       text-align: center !important;
     }
-    
-    /* Constrain page width to prevent elements from moving on wide screens */
-    #page.container {
-      max-width: 1800px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    
-    /* Constrain sections to prevent overflow */
-    .page-section {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-    
-    /* Ensure designer name blocks maintain their position */
-    .fe-block-24b8ef8f539e5c60656f,
-    .fe-block-0cefbb239c4d8ecb5b9d,
-    .fe-block-463e716dc7b9fc5629eb,
-    .fe-block-1d153d3b1aff7bf788a8,
-    .fe-block-ea586bbba3cdf3d8caa6,
-    .fe-block-f30e6de5ed527d437dfd,
-    .fe-block-7442dee64dddd730d787,
-    .fe-block-9e4c9dfaec3ca249b55d,
-    .fe-block-cc940462745f69412edb,
-    .fe-block-cambria-name,
-    .fe-block-1ae8dc6c8fb05c299acc {
-      max-width: 100%;
-      box-sizing: border-box;
-      overflow: hidden;
-    }
-    
-    /* Constrain designer name headings */
-    .sqs-html-content h3[style*="text-align:center"] {
-      max-width: 100%;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      box-sizing: border-box;
-    }
-    
-    /* Ensure fluid engine sections respect max width */
-    .fluid-engine {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-    
-    /* Constrain content wrapper */
-    .content-wrapper {
-      max-width: 1800px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-      box-sizing: border-box;
-    }
-    
-    /* Ensure all fe-blocks respect container width */
-    .fe-block {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
     </style>
     
   </head>
@@ -1904,7 +1843,7 @@
   display: grid;
   position: relative;
   grid-area: 1/1/-1/-1;
-  grid-template-rows: repeat(130,minmax(24px, auto));
+  grid-template-rows: repeat(104,minmax(24px, auto));
   grid-template-columns:
     minmax(var(--grid-gutter), 1fr)
     repeat(8, minmax(0, var(--cell-max-width)))
@@ -2512,11 +2451,8 @@
 
   @media (max-width: 767px) {
     .fe-block-cambria-image {
-      grid-area: 61/4/69/8;
+      grid-area: 105/4/113/8;
       z-index: 10;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
     }
   }
 
@@ -2536,16 +2472,8 @@
 
   @media (max-width: 767px) {
     .fe-block-cambria-name {
-      grid-area: 69/2/71/10;
+      grid-area: 113/2/115/10;
       z-index: 11;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
-    }
-    .fe-block-cambria-name h3 {
-      text-align: center;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
     }
   }
 
@@ -2578,13 +2506,9 @@
 
   @media (max-width: 767px) {
     .fe-block-team-photo {
-      grid-area: 71/1/81/11;
+      grid-area: 115/1/125/11;
       z-index: 9;
       min-height: 300px;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
-      overflow: hidden;
     }
     .fe-block-team-photo .sqs-block-content,
     .fe-block-team-photo .image-block-outer-wrapper,
@@ -2592,8 +2516,6 @@
     .fe-block-team-photo .fluid-image-container,
     .fe-block-team-photo img {
       min-height: 300px;
-      max-width: 100%;
-      width: 100%;
     }
   }
 
@@ -2603,8 +2525,10 @@
     z-index: 10;
 
     @media (max-width: 767px) {
-      grid-area: 81/1/82/11;
-      z-index: 10;
+      
+        
+      
+      
     }
   }
 
@@ -2642,8 +2566,8 @@
     z-index: 6;
 
     @media (max-width: 767px) {
-      grid-area: 82/2/85/10;
-      z-index: 6;
+      
+      
     }
   }
 
@@ -2679,11 +2603,8 @@
     z-index: 7;
 
     @media (max-width: 767px) {
-      grid-area: 85/2/95/10;
-      z-index: 7;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
+      
+      
     }
   }
 
@@ -2719,11 +2640,8 @@
     z-index: 8;
 
     @media (max-width: 767px) {
-      grid-area: 95/2/97/10;
-      z-index: 8;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
+      
+      
     }
   }
 
@@ -2759,11 +2677,8 @@
     z-index: 5;
 
     @media (max-width: 767px) {
-      grid-area: 97/2/107/10;
-      z-index: 5;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
+      
+      
     }
   }
 
@@ -2799,11 +2714,8 @@
     z-index: 6;
 
     @media (max-width: 767px) {
-      grid-area: 107/2/109/10;
-      z-index: 6;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
+      
+      
     }
   }
 
@@ -2839,11 +2751,8 @@
     z-index: 6;
 
     @media (max-width: 767px) {
-      grid-area: 109/2/119/10;
-      z-index: 6;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
+      
+      
     }
   }
 
@@ -2879,11 +2788,8 @@
     z-index: 7;
 
     @media (max-width: 767px) {
-      grid-area: 119/2/121/10;
-      z-index: 7;
-      width: 100%;
-      max-width: 100%;
-      box-sizing: border-box;
+      
+      
     }
   }
 

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shop • Amber‑Modern</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* minimal styles in case styles.css lacks these */
+    .shop-hero { padding: 4rem 1rem; text-align:center; }
+    .products { display:grid; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); gap: 1.25rem; padding: 1rem; }
+    .product { border: 1px solid rgba(0,0,0,.1); padding: 1rem; border-radius: 8px; display:flex; flex-direction:column; }
+    .product img { width:100%; height: 200px; object-fit:cover; border-radius:6px; }
+    .price { font-weight: 600; margin: .5rem 0; }
+    .product a.button { display:inline-block; padding:.6rem 1rem; text-decoration:none; border:1px solid #000; border-radius:6px; margin-top:auto; text-align:center; }
+    .disclaimer { font-size:.9rem; opacity:.8; text-align:center; padding: 0 1rem 2rem; }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services and Pricing</a></li>
+      <li><a href="consult.html">Book a Consultation</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="shop.html">Shop</a></li>
+    </ul>
+  </nav>
+
+  <header class="shop-hero">
+    <h1>Shop Furniture</h1>
+    <p>Curated pieces for staging and living. Click “Buy” to purchase via external checkout (e.g., Amazon, Shopify, or vendor link).</p>
+  </header>
+
+  <section class="products" id="products">
+    <!-- Example products — replace links/images as needed -->
+    <article class="product">
+      <img src="assets/shop/example-sofa.jpg" alt="Modern Performance Fabric Sofa">
+      <h3>Modern Performance Fabric Sofa</h3>
+      <div class="price">$1,199</div>
+      <a class="button" href="#" target="_blank" rel="noopener">Buy</a>
+    </article>
+
+    <article class="product">
+      <img src="assets/shop/example-chair.jpg" alt="Bouclé Accent Chair">
+      <h3>Bouclé Accent Chair</h3>
+      <div class="price">$299</div>
+      <a class="button" href="#" target="_blank" rel="noopener">Buy</a>
+    </article>
+
+    <article class="product">
+      <img src="assets/shop/example-table.jpg" alt="Oak Coffee Table">
+      <h3>Oak Coffee Table</h3>
+      <div class="price">$349</div>
+      <a class="button" href="#" target="_blank" rel="noopener">Buy</a>
+    </article>
+  </section>
+
+  <p class="disclaimer">Tip: you can swap these buttons with Shopify “Buy Buttons”, WooCommerce links, or Gumroad URLs later.</p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "amber-modern-static",
+  "version": "1.0.0",
+  "description": "Self-hostable static site converted from Squarespace",
+  "scripts": {
+    "start": "http-server -p 8000 -c-1",
+    "serve": "http-server -p 8000 -c-1"
+  },
+  "keywords": [
+    "static-site",
+    "squarespace-export"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
