@@ -12,8 +12,74 @@
     <link rel="stylesheet" type="text/css" href="css/site.css"/>
     <link rel="stylesheet" type="text/css" href="css/static.css">
     <style>
+      /* Hide the original complex header */
+      header#header {
+        display: none !important;
+      }
+      
+      /* Simple shop header with Home button */
+      .shop-simple-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 16px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+      }
+      
+      .shop-simple-header .home-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        background: #f6f8f9;
+        color: #5f6774;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 8px;
+        border: 1px solid #e8edf0;
+        transition: all 0.2s ease;
+        min-height: 48px;
+        touch-action: manipulation;
+      }
+      
+      .shop-simple-header .home-btn:hover {
+        background: #fff;
+        color: #0b0f19;
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+      
+      .shop-simple-header .home-btn:active {
+        transform: translateY(0);
+      }
+      
+      .shop-simple-header .home-btn svg {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+      
+      @media (max-width: 768px) {
+        .shop-simple-header {
+          padding: 12px 16px;
+        }
+        .shop-simple-header .home-btn {
+          padding: 10px 18px;
+          font-size: 15px;
+        }
+      }
+      
       .shop-hero {
-        padding: 240px 20px 80px 20px;
+        padding: 120px 20px 80px 20px;
         text-align: center;
         background: #f6f8f9;
         margin-top: 0;
@@ -160,6 +226,15 @@
           </a>
         </div>
       
+      <!-- Simple Shop Header with Home Button -->
+      <nav class="shop-simple-header">
+        <a href="index.html" class="home-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+          Home
+        </a>
+      </nav>
 
       
 

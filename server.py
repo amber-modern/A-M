@@ -10,7 +10,7 @@ import os
 import mimetypes
 from pathlib import Path
 
-PORT = 8001
+PORT = 8000
 
 class CustomHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
     """Custom request handler with better MIME types and routing."""
