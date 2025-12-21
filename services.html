@@ -84,7 +84,30 @@
       text-align: center !important;
     }
     </style>
-    
+    <style>
+ /* Quote/Estimator sizing fix */
+ #estimate-form .est-grid {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 16px;
+ }
+ #estimate-form .est-grid label {
+   width: 100%;
+   max-width: none !important;
+ }
+ #estimate-form .est-grid select,
+ #estimate-form .est-grid input[type="number"] {
+   width: 100% !important;
+   max-width: none !important;
+   min-width: 0;
+   box-sizing: border-box;
+   display: block;
+ }
+ /* Stack on small screens */
+ @media (max-width: 600px) {
+   #estimate-form .est-grid { grid-template-columns: 1fr; }
+ }
+</style>
   </head>
 
   <body
