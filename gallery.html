@@ -1586,6 +1586,24 @@
 
   
     <!-- Gallery Masonry --><div
+
+.gallery-masonry-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 44px;
+}
+
+.gallery-masonry-item-wrapper {
+  aspect-ratio: 3 / 4; /* adjust if needed */
+  overflow: hidden;
+}
+
+.gallery-masonry-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}						
   class="gallery-masonry"
   data-controller="GalleryMasonry"
   
